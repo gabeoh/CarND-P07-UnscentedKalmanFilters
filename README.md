@@ -12,13 +12,13 @@ using Unscented Kalman Filters.
     the Term 2 simulator.  It receives measurement data from the simulator,
     estimates the state, computes RMSE, and returns the results back to the
     simulator.
-- **[ukf.cpp](src/ukf.cpp)** - implements UKF algorithm; `Prediction`,
+- **[ukf.cpp](src/ukf.cpp)** - implements UKF algorithm; `Prediction`, and
     Lidar and Radar measurement `Update`
 - **[tools.cpp](src/tools.cpp)** - defines functions to calculate Root Mean
     Square Error (RMSE)
 ### Other Support Files
-- **[plot-nis/](plot-nis/)** - Python script to plot NIS, and resulting plot
-    images
+- **[plot-nis/](plot-nis/)** - Python script to plot NIS values, and
+    resulting plot images
 - **[CMakeLists.txt](CMakeLists.txt)** - CMake file
 - **[data/obj_pose-laser-radar-synthetic-input.txt](data/obj_pose-laser-radar-synthetic-input.txt)** -
     a copy of one of the sample data files used by the simulator
@@ -72,14 +72,14 @@ Run the installation script from the project repository.
 | 3.0      | 0.75       |
 
 #### Root Mean Squre Error (RMSE)
-| rmse_x   | rmse_y   | rmse_vx  | rmse_vy  |
+| x        | y        | vx       | vy       |
 |:--------:|:--------:|:--------:|:--------:|
 | 0.0732   | 0.0849   | 0.3796   | 0.2388   |
 
-#### NIS Lidar
+#### Consistency Check - Lidar
 ![NIS_Lidar.png](plot-nis/NIS_Lidar.png)
 
-#### NIS Radar
+#### Consistency Check - Radar
 ![NIS_Radar.png](plot-nis/NIS_Radar.png)
 
 ## License
