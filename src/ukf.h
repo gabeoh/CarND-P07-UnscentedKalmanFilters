@@ -28,10 +28,10 @@ public:
   bool use_radar_;
 
   // State dimension
-  size_t n_x_;
+  int n_x_;
 
   // Augmented state dimension
-  size_t n_aug_;
+  int n_aug_;
 
   // Sigma point spreading parameter
   double lambda_;
